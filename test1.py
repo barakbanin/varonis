@@ -1,9 +1,6 @@
 class MagicList:
-    def __init__(self, cls_type=None):
-        if not cls_type:
+    def __init__(self):
             self.lst = list()
-        else:
-            self.lst = cls_type
         self.counter=0
         def __setitem__(self, i, item):
             if len(self.lst)==0:
